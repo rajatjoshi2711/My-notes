@@ -1,0 +1,61 @@
+Operating systems are the programs that controls the excecution of application programs and act as an interface between applications and computer hardware.
+
+
+Operating system Objectives and Functions :-
+
+Objectives :
+1. Convenience - Make computer more convenient to use
+2. Efficiency - Use system resources efficiently
+3. Ability to evolve - Permit new functions
+
+Services provided by OS :
+1. Program Development - Application program development tools like editors and debuggers
+2. Program execution - loading instructions and data into main memory, initiating files and I/O devices, Handling scheduling duties etc.
+3. Access to I/O devices - Hiding complex set of instructions to handle I/O devices from programmers, but offering him simple Reads and Writes.
+4. Access control mechanism for files
+5. Error detection and response - Errors be like-internal and external hardware errors, memory error, device malfunction, software errors etc. OS must provide a response that clears the error condition.
+6. Accounting - Usage statistics.
+
+Functions performed by OS :
+1. Process management - OS will create priorities for the processes. It will start or stop the execution of processes, also create child processes after dividing large processes into smaller ones. Process synchronization if processes are interdependent. Avoidance of overlapping of memory area if processes are independent.
+2. Operating System as a Resource Manager - OS manages all the resources which are attached to the system, including memory, processor and all I/O devices. OS will identify at which time the CPU will perform which operation and which memory is used by which program. It will also manage which Input device will respond to which request.
+3. Memory managemment - Allocate and delloacate the memory to the process.
+4. File management - Operations like create, modify, rename, copy, delete.
+5. Security and protection - Password protection mechanism. Access control mechanisms.
+6. User interface - Hide details of operation completion from the user. (a) Command line interface. (b) Graphical user interface.
+
+
+Evolution of OS :-
+
+Reasons of OS evolution :
+1. Hardware upgrades - For example, adding paging mechanism or graphical terminal in subsequent version of OS.
+2. New services - User demands or needs of system manager. Includes adding measurement or control tools.
+3. Fixes - Fixing of faults
+
+How OS evolved :
+1. Serial Processing - Direct interaction with hardware, without OS.
+Problems -
+(1) Scheduling - Hadcopy sign-up time required for user. Resulting either wastage of time or running out of time.
+(2) Setup time - Frequent setup of compiler, loader, linker hardwares in case of errors.
+2. Simple batch systems - introduction of software called monitor. 
+
+Modes of opeartion :
+1. User mode - User programs execute in the user mode. They have limited access to the memory and OS programs. If code executing in user mode tries to access a privileged CPU instruction or modify memory, it has no access to, a trapable exception is thrown. Only that particular application crashes instead of entire system crashing.
+2. Kernel mode - Monitor program executes in kernel mode. It can access the protected memory and privileged instructions for execution.
+Device drivers can run in either of the mode.
+User mode to kernel mode switching using TRAP instruction or an interrupt.
+
+
+Developments leading to Modern Operating Systems :
+
+Microkernel -  near-minimum amount of software that can provide the mechanisms needed to implement an operating system (OS). These mechanisms include low-level address space management, thread management, file management, I/O management and inter-process communication (IPC).
+
+Monolithic kernel - Single process with all elements sharing the same address space.
+
+Multithreading - Technique in which a process, executing an application is divided into threads that can run concurrently.
+
+Inter-Process communication (IPC) - Inter-process communication (IPC) is any mechanism which allows separate processes to communicate with each other, usually by sending messages.
+
+
+Virtual Machines :
+

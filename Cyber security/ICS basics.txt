@@ -1,0 +1,44 @@
+Cryptography:
+The art and science of keeping messages secure is called cryptography.
+Cryptographis algorithm is called as cipher, which is a mathematical function used for encryption and decryption.
+A cryptosystem is an algorithm along with all possible plaintexts, ciphertextsand keys.
+
+Key based algorithms:
+1. Symmetric algorithms - Encryption and decrytion keys are same most of the times. Sender and reciever should agree on the key before communication.
+2. Public key algorithms - Encryption and decrytion keys are different. Encryption key is made publicly available, so that any one can send the message, but only the person with the knowledge of detic attackcryption key (called private key) can read it.
+
+Cryptanalyalitic attack:
+1. Ciphertext-only attack - Attacker has many ciphertexts of a single algorithm, using which he tries to find out many plaintexts or key.
+2. Known-plaintext attack - Access to some ciphertexts, some plaintexts. Job is to deduce the key.
+3. Chosen-plaintext attack - In addition to ciphertexts and plaintexts, attacker can choose which plaintext to encrypt.
+4. Adaptive-Chosen-plaintext attack - Attacker can modify the choice based on previous plaintext encryption.
+5. Chosen-ciphertext attack
+6. Chosen-key attack
+7. Rubber-hose cryptanalysis
+
+Ciphers:
+1. Substitution Cipher - Each charater is substituted for another character.
+	i. Monoalphabetic cipher - One-to-one character mapping
+	ii. Homophonic substitution cipher - single character of plaintext maps to multiple characters of ciphertext.
+	iii. Polygram substitution cipher - Blocks of characters are encrypted to some other blocks of characters.
+	iv. Polyalphabetic substitution cipher - multiple monoalphabetic ciphers.
+
+2. Transposition Cipher - 
+	i. Rotor machines: Mechanical encryption device. Three rotors make permutations of the alphabets based on certain logic to encrypt them. e.g. Enigma machine (WW-II)
+	ii. XOR
+
+Computer security:
+The protection afforded to an automated information
+system in order to attain the applicable objectives of preserving the integrity, availability, and confidentiality of information system resources (includes hardware, software, firmware, information/data, and telecommunications).
+
+Key objectives of computer security:
+1. Confidentiality:
+	i. Data confidentiality - confidential information is unavailable to the unauthorised individuals.
+	ii. Privacy - Access and sharing control to individulas of the information related to them.
+2. Integrity:
+	i. Data integrity - information is changes only in authorised manner.
+	ii. System integrity
+3. Availibility: System works properly and service is not denied to authorised users.
+
+Cryptographic Protocols:
+A protocol is a series of steps, involving two or more parties, desgined to accomplish a task.

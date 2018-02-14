@@ -1,0 +1,35 @@
+Create a object of another class
+Human tom;
+tom = new Human();
+
+
+
+Use variables from other class for the object
+tom.age = 5;
+
+
+
+Use methods on the object
+tom.speak();
+
+
+
+Inheritance of classes
+If a class 'Bird' is inherited from another class 'Animal', write
+public class Bird extends Animal
+
+Add similar constructor like 'Animal' in 'Bird'
+e.g. If there is a constructor in 'Animal' like this,
+
+public Animal(int age, String gender){
+}
+
+Add in 'Bird'
+
+public Bird(int age, String gender){
+	super(age, gender);
+}
+
+'super' calls super-class' constructor.
+
+Child can inherit the variables and methods from parent, but not reverse. Methods of class 'Animal' can be called on a object of 'Bird', but methods explicitly defined in 'Bird' cannot be called in 'Animal'.

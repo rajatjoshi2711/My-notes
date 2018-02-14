@@ -1,0 +1,15 @@
+Classes of Interrupts :
+Program, Timer, I/O, Hardware failure
+
+
+
+Memory hierarchy :
+As we go down the hierarchy, this occures:
+(1) Decreasing cost per bit
+(2) Increasing capacity
+(3) Increasing access time
+(4) Decreasing frequency of access to the memory by the processor
+
+Inbound memory -> REgisters, Cache, Main memory
+Outboard storage -> Magnetic disk, CD-ROM, CD-RW, DVD-RW, DVD-RAM, Blu-Ray
+Off-line storage -> Magnetic tape

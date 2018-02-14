@@ -1,0 +1,374 @@
+Language : Python
+Editor : python shell / Spyder (Scientific PYthon Development Environment)
+Install from : Anaconda / python.org
+
+To enter Python interactive console :
+1. Go to command prompt
+2. Type "python"
+3. Entered in interactive console successfully.
+4. To exit, type "exit()" or press Ctrl+Z.
+
+Import new library in python :
+1. Let's say the library you want to install is 'pcsets'.
+2. Go to command prompt.
+3. Do not enter python interactive console.
+4. Type "pip install pcsets" (pip is a Python library used to install and manage other Python libraries.)
+5. Library installed
+
+To view libraries installed :
+1. Do not enter python interactive console.
+2. Type "conda list".
+3. List of libraries along with versions get displayed.
+
+iPython is a recommendable Python shell with extra features. A shell itself is the interface that accepts your Python code and sends it to the operating system for processing.
+
+
+
+
+Variables :
+1. Data type declaration not required.
+eg. price = 5
+This creates a variable named "price" of type "int" (because value assigned is int, i.e. 5)
+Multiple assignment of variables is possible.
+eg. a=b=c=3
+
+2. To find out data type of a variable, use 'type' function
+eg.
+INPUT : print(type(name_of_variable))
+OUTPUT : <class 'int'> OR <class 'float'>
+
+3. Print the value of a variable
+INPUT : print(price)
+OUTPUT : 5
+Arithmetic operations can be performed inside a print statement.
+eg. print(price*rate)
+This will multiply 'price' by 'rate' and print the resultant value.
+
+4. Change datatype of a variable -
+Re-declare the variable with some other value.
+eg. price = "Hello!"
+This changes the datatype of variable "price" from "int" to "str".
+
+5. Declaring a string -
+string1 = "abc_123"
+String is always declared inside quotes.
+Even when passing a string as a parameter in the function call, we must pass it inside quotes.
+We can declare a number as a string, but then we can't perform mathematical operations on the string.
+eg. Year = "2017"
+It is a string. Therefore 'Year + 1' is invalid.
+
+6. String concatenation -
+(a) Concatenate two strings :-
+eg.
+s1 = "Hello"
+s2 = "World"
+INPUT : s1+s2
+OUTPUT : "HelloWorld"
+(b) Enter another string in between two strings :-
+INPUT : s1+"_"+s2
+OUTPUT : Hello_World
+This can be done for multiple strings in a single instruction.
+
+7. String Multiplication -
+INPUT : "Bye"*2
+OUTPUT : 'ByeBye'
+
+8. Indexing for Strings -
+Strings have indexes starting from '0'.
+We can access elemets of a string similar to lists.
+
+9. Global variables -
+Declare a vaiable as global in a function writing following syntax.
+global m
+This variable can be accesssed outside the function, once the function is called.
+
+
+
+
+How to write a code :
+1. Comments -
+Write single-line comment starting with #.
+write multi-line comments between """three double quotes""".
+
+2. Save file with '.py' extension.
+
+3. Run the code using triangular 'Run file' button present in 'Spyder' (or hit F5). It gets executed in the console.
+
+
+
+
+If-Else :
+1. Syntax -
+if year == realYear:
+	print("Equal")
+	print("Yes! really equal")
+else:
+	print("not equal")
+	print("Check the values again")
+
+2. In Python, if-else doesn't has curly brackets. All the indented code below if statement is executed if the condition is true.
+
+3. To execute if-else in console, press Shift+Enter.
+
+4. This is valid -
+if 200==201-1:
+	print("yes")
+else:
+	print("no")
+
+
+
+
+Functions :
+1. Types - Built-in/Custom
+
+2. Built-in functions - 
+print() :- prints the string written inside to paranthesis.
+range(start, end, step) :- creates a list starting from 'start', ending at 'end' with steps of 'step'. Range is upper-bound exclusive.
+
+3. Custom functions - 
+(a) Define a function 
+def potatoCost(potatoPrice, amount, potatoType):
+	cost = potatoPrice * amount
+	print(potatoType)
+	return(cost)
+(b) Call a function
+potatoCost(10, 10, 3.0)
+
+4. Hard coded input parameters -
+def potatoCost(potatoPrice=100, amount=500, potatoType="A1"):
+
+
+
+
+Data types :
+1. Five data types -
+int, float, string, list, tuple.
+
+2. Lists -
+Lists are sequence data types.
+Define a list :- years = [2015, 2017, 2019]
+Add a new data in list :- years.append(2021)
+View elements in list :- 
+INPUT : years ('years' and 'print(years)' generates same output)
+OUTPUT : [2015, 2017, 2019, 2021]
+Indexes of a list :-
+Indexes start from 0. We can access elements using index.
+INPUT : years[0]
+OUTPUT : 2015
+We can access a slice of elements by specifying upper and lower bounds.
+list1 = [2000,  2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018]
+INPUT : list1[2:6]
+OUTPUT : [2004, 2006, 2008, 2010]
+We need not specify lower bound if we want to print all the elements from start. Same for end.
+INPUT : list1[:5]
+OUTPUT : [2000, 2002, 2004, 2006, 2008]
+For upper bound...
+INPUT : list1[7:]
+OUTPUT : [2014, 2016, 2018]
+Alternate indexing to access elements from end is created. In this indexing, last element is at index -1, second last at -2 and so on.
+To access elemets from last
+INPUT : list1[-2:] (to print last 2 elemets)
+OUTPUT : [2016, 2018]
+Arithmetic operations on a list :-
+INPUT : years[2] - 2000
+OUTPUT : 19
+list() function creates a list.
+eg.
+INPUT : list1 = list(range(2000, 2006, 2))
+	print(list1)
+OUTPUT : [2000, 2002, 2004]
+
+3. Tuples -
+Tuples are sequence data types.
+Define a tuple :-
+tuple1 = (1, 2, 5)
+Indexing and accessing data using indexes is similar to lists.
+Difference between lists and tuples is, lists are mutable whereas tuples are immutable. Mutable means something which can be modified. Tuples can't be modified once created.
+Tuples are heterogeneous data structure, while list is homogeneous. This means, a tuple can have either all integers or all strings etc. A list can consistes of different types of data structure.
+eg. a_list = [1, 2, "Hi there", 3]
+
+4. Sets -
+Sets are collection data types.
+Define a set :-
+set1 = {2015, 2017, 2019}
+Lists can have duplicate objects, but sets need to have unique objects. We can convert a list into a set, while doing so, the duplicate objets in the list will be dropped.
+Syntax :-
+list1 = [2015, 2017, 2017]
+list1 = set(list1)
+INPUT : print(list1)
+OUTPUT : {2015, 2017}
+INPUT : print(type(list1))
+OUTPUT : <class 'set'>
+
+5. Dictionaries -
+Set of pairs of keys and values.
+eg.
+dict1 = {"last year":2016, "this year":2017, "next year":2018}
+"last year" is key. 2016 is a value.
+Just like lists, we can access values of dictionaries using keys.
+INPUT : dict1["this year"]
+OUTPUT : 2017
+
+
+
+
+Loops :
+1. For -
+INPUT : for item in range(2015, 2022, 2):
+		print(item)
+OUTPUT : 2015	2017	2019	2021
+
+2. For loop with two variables -
+INPUT :
+for a, b in zip(first, second)
+	print(a)
+
+
+
+
+File handling :
+1. Open file -
+Opening modes :- r, w, a(append)
+Syntax :- file = open("G:\\file\\file1.txt", 'w')
+
+2. Close file -
+file.close()
+
+3. Read contents of the file -
+Create a variable and store the contents in it.
+content1 = file.read()
+
+4. Write in file -
+If we open the file in 'w' mode and use function, file.write(), all the previous content of the file, if any, will get erased and new text will be added at its place.
+To add new text in existing file, in addition to the original content, open the file with 'a' mode, and use function file.write().
+Syntax :- file.write("New sentence")
+
+5. Using 'with' method -
+Advantage :- We need not close the file.
+Syntax :-
+with open("G:\\file\\file1.txt", 'w') as file:
+	file.write("Hello")
+(The word 'file' after 'as' is the variable name.)
+
+
+
+
+Using standard Libraries :
+1. PyPI - Python Package Index
+Here we get all the information about all the libraries.
+
+2. Data analysis using 'pandas'
+CSV = Character Separated Values
+df = pandas.read_csv("G:\\file\\file1.txt")
+Dataframe (with index values) gets created.
+df.mean() will calculate the average of values in dataframe.
+To calculate mean of 3 files at a time, we use library, 'glob2'.
+Syntax :- filelist.glob2.glob("G:\\file\\*.txt")
+OUTPUT :-
+['G:\\file\\file1.txt'
+ 'G:\\file\\file2.txt'
+ 'G:\\file\\file3.txt']
+It creates a list of all the files having '.txt' extension, in that particular folder.
+To find mean,
+for file in filelist:
+	df = pandas.read_csv(file)
+	m = df.mean()
+	print(m)
+
+
+
+
+Code introspection :
+For short information - pandas?
+For detailed information - help(pandas)
+Full list of features (these features can be accesses using '.' notation) - dir(pandas)
+Information about methods - pandas.pivot?
+
+
+
+
+Generating KML file :
+KML - Keyhole Markup Language
+Used to represent points, lines, polygons etc. Advancely, it can be used to create maps.
+Library used - 'simplekml'
+Create internal kml object -
+Syntax :- kml = simplekml.Kml()
+Add new point -
+Syntax :- kml.newpoint(name="sample", coords=[(10,10)])
+Save the KML file -
+Syntax :-kml.save("G:\\KML\\point.kml")
+Double click to open the file in Google Earth.
+
+
+
+
+Converting CSV files to KML files :
+CSV - Comma Separated Values
+'.csv' files are used to store tabular data. Files in the '.csv' format can be imported and exported from programs that store data in tables.
+To create KML using data in CSV -
+1. Create a dataframe using 'pandas.read_csv()' function.
+2. Iterate for loop with two variables, viz. long and lat.
+3. newpoint() function should be inside the for loop.
+
+
+
+
+Interacting with the user :
+Input function -
+Save the accepted input in a variable.
+Syntax :- m = input("Please enter miles : ")
+The program will print the sentence inside quotes and ask user for an input. The input will be stored in variable 'm'.
+Function 'input()' always reads the input as a string. We need to convert it into int or float, as needed.
+To convert the return type of a variable :-
+m = float(m)
+
+
+
+
+Creating a GUI with tkinter :
+1. import tkinter
+
+2. Create an empty window -
+root = tkinter.Tk()
+
+3. Use of mainloop -
+root.mainloop()
+Mainloop keeps the window on the screen until the user clicks close button.
+Always write all the code related to a specific window between the lines 'Tk' and 'mainloop'.
+
+4. Add a title to the window -
+root.title("My Window!")
+
+5. Write text in the window (Label) -
+label = tkinter.Label(root, text="Click here to get started")
+label.pack()
+
+6. Create button -
+browseButton = tkinter.Button(root, text="Browse", command=kmlFunction)
+browseButton.pack()
+'text' here is the text written on the button. 'command' is the function to perform. A function named 'kmlFunction' will be executed here, when button 'Browse' is pressed.
+
+7. Browse files from PC -
+(a) Import the function using following command :-
+from tkinter.filedialog import askopenfilename
+(b) Use the function in some custom function :-
+infile = askfileopenname()
+Variable 'infile' will save the file selected by user.
+
+8. Define size of the window -
+root.geometry("300x300")
+
+9. Accept input from user in textbox -
+Use 'Entry'.
+variable_name = tkinter.Entry(window_name, bd=1)
+variable_name.pack()
+
+
+
+
+Creating an '.exe' file from Python code :
+1. Install 'pyinstaller' using command 'pip install pyinsaller'
+2. pyinstaller --onefile --windowed "GUI-CSV-To-KML-Lecture.py"
+3. '.exe' file created in 'dist' folder.
+(Not working with latest version of Python.)

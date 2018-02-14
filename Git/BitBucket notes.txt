@@ -1,0 +1,34 @@
+BitBucket is used for collaborating with team members while creating private repositories.
+It is a client of Git.
+
+Create a repository:
+1. Login into your BitBucket account
+2. Click on the '+' symbol on left
+3. Select 'Create a new repository'
+4. Fill in all the details
+5. Done
+
+
+Clone repository (using command line):
+1. Navigate to the local folder you want to clone the repository in (in the terminal).
+2. Navigate to the repository on the BitBucket cloud.
+3. Click on the '+' symbol on left
+4. Select 'Clone this repository'
+5. Copy the command appeared and paste it in the termainal.
+6. Done
+
+
+Commit folder (using command line):
+1. Clone the repository
+2. Command: $git add . ('.' is to add everything)
+3. Command: $git commit
+4. A window appears which asks to write comments for the commit. White your comment at the end of the vim.
+5. Exit by typing ':wq'. (If not possible type ':quit!')
+6. If aborted, put command $git commit -m 'your_comments_here'
+7. Command: $git push origin master
+8. It takes time if the files are large.
+9. Done
+
+Create new branch:
+1. $git checkout -b <branch-name>
+2. Push code on new branch: $git push origin <branch-name>

@@ -1,0 +1,23 @@
+To import pygame:
+import pygame
+
+
+Initialize pygame:
+pygame.init()
+
+
+Terminologies:
+1. display window - screen area where we draw all graphical elements
+2. event - Action performed by the user, like pressing a key or clicking
+
+
+Create a display window:
+pygame.display.set_mode()
+e.g.
+screen = pygame.display.set_mode((1200, 800))
+screen is name of the display window (object name).
+1200, 800 are the dimensions of the window
+
+
+Access the event:
+pygame.event.get()

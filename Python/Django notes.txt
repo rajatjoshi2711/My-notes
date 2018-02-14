@@ -1,0 +1,84 @@
+Django is an open source web framework required to use python as web backend.
+
+
+
+
+Installing Django (Windows):
+1. Have Python installed
+2. Type 'pip install django' in command prompt.
+
+
+
+
+New project in Django:
+1. Type 'django-admin startproject myproject' in command prompt.
+('myproject' is the name of the project)
+2. A folder will be created at the destination with the name 'myproject'. It will have another folder 'myproject' and python file 'manage.py'.
+3. Inner folder will have 4 python files, viz. _init_.py, settings.py, urls.py and wsgi.py.
+
+
+
+
+Running and Testing django server:
+1. (in the project directory) Type 'python manage.py runserver'.
+2. Go to 127.0.0.1:8000 in the browser and a webpage should get displayed.
+
+
+
+
+Creating a new webapp:
+1. Type 'python manage.py startapp webapp'.
+2. A new folder named 'webapp' gets created in the project folder.
+3. Folder will have a few python files.
+	3.1. _init_.py: to initialize the webapp.
+	3.2. admin.py: Administration of the website
+	3.3. apps.py: tyape of the app, as in 'webapp'
+	3.4. models.py: Database information and metadata
+	3.5. tests.py: To create test cases
+	3.6. views.py: What the end-user views or interacts with
+4. Add name of the webapp (i.e. 'webapp') in INSTALLED_APPS in settings.py.
+5. import 'include' in urls.py from django.conf.urls. (this means, simply change the line 'from django.conf.urls import url' to 'from django.conf.urls import url, include'.)
+6. Add line 'url(r'^webapp/', include('webapp.urls')),' in urlpatterns in urls.py.
+7. Create file urls.py in webapp
+8. Write 'from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+        url(r'^$', views.index, name='index')]' in the urls.py file in webapp.
+
+
+Importing package:
+Write - 'from . import views', where 'views' is the name of the package.
+
+
+
+
+Using readymade front-end templates for Django server:
+1. Create a new app, say 'example' inside the project.
+2. Create folder 'static' in the same project at the same level as of 'example'
+3. Put all CSS, JS and image stuff in 'static' folder.
+4. Create a folder 'template' inside 'example' and put all HTML files in it.
+5. Write following code at the end of settings.py file in project folder.
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+6. Edit the HTML files in following manner.
+	6.1. CSS:
+		Original line: <link rel="stylesheet" href="css/foundation.css" />
+		Edited line: <link rel="stylesheet" href="{% static 'css/foundation.css' %}" />
+	6.2 JavaScript:
+		Original line: <script src="js/pace/pace.js"></script>
+		Edited line: <script src="{% static 'js/pace/pace.js' %}"></script>
+	6.3 Hyperlinks:
+		Original line: <a href="compose.html" title="Compose">Compose</a>
+		Edited line: <a href="/compose/" title="Compose">Compose</a>
+	In case of href="#", if the code doesn't work, try putting 'javascript:void(0)' in the place of the '#'
+7. Add line '{% load static %}
+' at the beginning of every file.

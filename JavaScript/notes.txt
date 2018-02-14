@@ -1,0 +1,8 @@
+Names:
+JavaScript = LiveScript = JScript = Mocha = ECMAScript
+
+JavaScript is interprited in the browser (client-side) using the JavaScript Engine each browser has.
+
+JIT Compiler - Just In Time Compiler, which translates JS code realtime.
+
+DOM = Document Object Model

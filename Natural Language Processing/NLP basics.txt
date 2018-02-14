@@ -1,0 +1,25 @@
+Study of language:
+1. Linguists: those who study language
+	subareas-phonetics, morphology, syntax, semantics, pragmatics.
+
+2. Psycholinguists: study of psychological factors affecting human use of language.
+
+3. Philosophers: Study of what words mean. 
+
+4. Computational linguists: Making computer understand a particular language.
+
+
+Applications of Natural language understanding:
+1. Text based aaplications - processing of written text, finding appropriate documents from database, information extraction, translation, summerizing text, keyword searches without understanding the text, translation based on pattern matching in which association of sequence of words is done.
+2. Dialogue based applications - human-machine communication (query a DB using natural language, automated telephonic customer service, tutoring systems), Problems faced are-spoken languanges are different, speed of conversation needs to be maintained.
+
+
+Speech recognition vs language understanding
+SR system need not understand language
+
+Syntax, Sementics and pragmatics
+Syntax: A sentence is syntactically correct, if it has correct sentence formation and abides English grammar rules; no matter what meaning it conveys.
+Sementics: A sentence is sementically correct if it makes sense to reader.
+Pragmatics: A sentence is pragmatically correct if it is sementically correct and fits perfectly in the context.
+phonetics: How words sound
+morphological knowledge: construction of words from small units called morphemes.
