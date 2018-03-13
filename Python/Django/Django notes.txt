@@ -47,6 +47,8 @@ urlpatterns = [
         url(r'^$', views.index, name='index')]' in the urls.py file in webapp.
 
 
+
+
 Importing package:
 Write - 'from . import views', where 'views' is the name of the package.
 
