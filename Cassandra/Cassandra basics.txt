@@ -1,0 +1,8 @@
+(Commands on Ubuntu)
+
+Keyspace (analogous to DB schema in RDBMS) is a container for multiple column families. Column family is analogous to 'tables' in RDBMS. A cluster contains one keyspace per node.
+
+
+Chack running status: $sudo service cassandra status
+Check cluster status: $sudo nodetool status
+Enter interactive command line interface for CQL: $cqlsh
